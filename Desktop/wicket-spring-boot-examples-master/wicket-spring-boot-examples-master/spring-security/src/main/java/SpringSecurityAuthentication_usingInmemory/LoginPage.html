@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<title>Login Page</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.container {
+  padding: 16px;
+  width: 100%;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+</style>
+
+</head>
+	<body>
+		<form wicket:id="loginForm"  action="/action_page.php" style="max-width:500px;margin:auto">
+			<div wicket:id="feedback" class="container"></div>
+			<h2>Login Page</h2>
+			<p>Please fill the login credentials.</p>
+			<p>
+				<label>USERNAME</label>
+				<i class="fa fa-user icon"></i>
+				<input type="text" placeholder="Username" wicket:id="username" required />
+			</p>
+			<p>
+				<label>PASSWORD</label>
+				<i class="fa fa-key icon"></i>
+				<input type="password" placeholder="Password" wicket:id="password" required />
+			</p>
+			<input type="submit" value="Login" class="btn"/>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,8 @@
+# wicket-spring-boot-examples
+
+Provides some example projects to show what the Wicket Spring Boot Starter project can do.
+
+## Project List:
+
+* Spring Security - link:/spring-security[spring-security]
+** Autoconfiguration of Spring Security
